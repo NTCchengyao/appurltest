@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URLtest</title>
     <style>
-        body{
-            padding: 20px;
-        }
-        a{
+        #applink{
+            width: 1%;
             margin: 0 auto;
-            border-radius: 30%;
+            padding-top: 50px;
+        }
+        #applink #go_myapp{
+            display: inline-block;
+            border-radius: 10%;
             box-shadow: 2px 2px 2px #000;
+            background-color:rgb(0, 26, 255);
+            padding: 10px 5px;
+            text-decoration: none;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <a href="vnwallet://" style="background-color:aquamarine;padding: 20px;">openApp</a>
+    <div id="applink">
+        <div>
+            <a id="go_myapp" href="">OpenMyApp</a>
+        </div>
+    </div>
 
     <script>
-        // window.onload=function(){
-            window.location.href="vnwallet://";
-        // };
+        var url = window.location.href;
+        var arrayUrl = url.split('?');
+        console.log(arrayUrl[1]);
+        var go_myapp = document.querySelector("#go_myapp").setAttribute("href",goToUrl);
     </script>
 </body>
 </html>
