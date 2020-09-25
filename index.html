@@ -9,11 +9,14 @@
             margin: 0;
             height: 100vh;
             background: linear-gradient(60deg, rgba(50, 70, 177, 1)45%, rgba(255, 255, 119, 0.8)60%);
-            animation:body_background 5s infinite alternate-reverse;
+            animation:body_background 400ms infinite ease-in-out alternate-reverse;
         }
         @keyframes body_background {
-            from { background: linear-gradient(60deg, rgba(50, 70, 177, 1)45%, rgba(255, 255, 119, 0.8)60%); }
-            to { background: linear-gradient(60deg, rgba(50, 70, 177, 1)30%, rgba(255, 255, 119, 0.8)90%); }
+            0% { background: linear-gradient(60deg, rgba(50, 70, 177, 1)45%, rgba(255, 255, 119, 0.8)60%); }
+            25% { background: linear-gradient(60deg, rgba(50, 70, 177, 1)40%, rgba(255, 255, 119, 0.8)65%); }
+            50% { background: linear-gradient(60deg, rgba(50, 70, 177, 1)35%, rgba(255, 255, 119, 0.8)70%); }
+            75% { background: linear-gradient(60deg, rgba(50, 70, 177, 1)30%, rgba(255, 255, 119, 0.8)75%); }
+            100% { background: linear-gradient(60deg, rgba(50, 70, 177, 1)25%, rgba(255, 255, 119, 0.8)80%); }
         }
         #applink{
             width: 200px;
