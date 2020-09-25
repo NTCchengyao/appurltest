@@ -9,6 +9,11 @@
             margin: 0;
             height: 100vh;
             background: linear-gradient(60deg, rgba(50, 70, 177, 1)45%, rgba(255, 255, 119, 0.8)60%);
+            animation:body_background 5s infinite alternate-reverse;
+        }
+        @keyframes body_background {
+            from { background: linear-gradient(60deg, rgba(50, 70, 177, 1)45%, rgba(255, 255, 119, 0.8)60%); }
+            to { background: linear-gradient(60deg, rgba(50, 70, 177, 1)30%, rgba(255, 255, 119, 0.8)90%); }
         }
         #applink{
             width: 200px;
