@@ -31,7 +31,7 @@
     <script>
         var url = window.location.href;
         var arrayUrl = url.split('?');
-        console.log(arrayUrl[1]);
+        var goToUrl = unescape(arrayUrl[1]);
         var go_myapp = document.querySelector("#go_myapp").setAttribute("href",goToUrl);
     </script>
 </body>
