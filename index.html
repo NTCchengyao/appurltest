@@ -58,8 +58,9 @@
     <script>
         var url = window.location.href;
         var arrayUrl = url.split('?');
-        var goToUrl = unescape(arrayUrl[1]);
-        document.querySelector("#go_myapp").setAttribute("href",goToUrl);
+        // var goToUrl = unescape(arrayUrl[1]);
+        // document.querySelector("#go_myapp").setAttribute("href",goToUrl);
+        document.querySelector("#go_myapp").setAttribute("href",arrayUrl);
     </script>
 </body>
 </html>
